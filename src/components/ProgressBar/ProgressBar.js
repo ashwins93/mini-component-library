@@ -9,16 +9,19 @@ const SIZES = {
   small: {
     '--padding': 0,
     '--borderRadius': '4px',
+    '--borderRadiusWrapper': '4px',
     '--height': '8px'
   },
   medium: {
     '--padding': 0,
     '--borderRadius':'4px',
+    '--borderRadiusWrapper': '4px',
     '--height': '12px',
   },
   large: {
     '--padding': '4px',
     '--borderRadius': '4px',
+    '--borderRadiusWrapper': '8px',
     '--height': '16px'
   }
 }
@@ -39,7 +42,7 @@ const Wrapper = styled.div.attrs({
   'aria-labelledby': 'progresslabel',
 })`
   padding: var(--padding);
-  border-radius: var(--borderRadius);
+  border-radius: var(--borderRadiusWrapper);
   overflow: hidden;
   box-shadow: 0px 2px 4px 0px ${COLORS.transparentGray35} inset;
   background-color: ${COLORS.transparentGray15};
